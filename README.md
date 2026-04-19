@@ -201,7 +201,27 @@ adata = ad.read_h5ad("results/results.h5ad")
 > Use `ad.read_h5ad()` instead.
 
 ---
+## Results  
 
+- Successfully created an AnnData object with a sparse matrix  
+- Assigned meaningful observation and variable names  
+- Added metadata using `obs` and `var`  
+
+- Performed subsetting using:
+  - Index-based selection  
+  - Metadata filtering  
+
+- Stored multi-dimensional data in:
+  - `obsm` (e.g., UMAP embeddings)  
+  - `varm`  
+
+- Used `uns` for unstructured metadata storage  
+
+- Implemented layers to store transformed data (e.g., log-transformed values)  
+
+- Demonstrated the concept of **views vs copies** and memory-efficient operations  
+
+- Saved and loaded data using `.h5ad` format  
 ## Key Concepts
 
 ### Why AnnData is Powerful
@@ -214,35 +234,32 @@ adata = ad.read_h5ad("results/results.h5ad")
 | Scanpy integration | Drop-in compatibility with the full sc analysis ecosystem |
 | `.h5ad` format | Portable, compressed, and fast I/O |
 
----
 
+---
 ## Workflow Summary
-Raw Count Matrix
-↓
-AnnData Object (.X)
-↓
-Add Metadata (.obs / .var)
-↓
-Subset / Filter Cells
-↓
-Embeddings (.obsm: PCA / UMAP)
-↓
-Layers (.layers: log / normalized)
-↓
+
+Raw Count Matrix  
+↓  
+AnnData Object (.X)  
+↓  
+Add Metadata (.obs / .var)  
+↓  
+Subset / Filter Cells  
+↓  
+Embeddings (.obsm: PCA / UMAP)  
+↓  
+Layers (.layers: log / normalized)  
+↓  
 Save to Disk (.h5ad)
 
----
-
 ## Repository Structure
+
 .
-├── notebooks/
+├── ann data project/
 │   └── anndata_getting_started.ipynb
-├── results/
-│   └── results.h5ad
 ├── README.md
 └── requirements.txt
 
----
 
 ## Requirements
 
@@ -284,8 +301,11 @@ using AnnData. It is a core building block for more advanced workflows:
 
 ---
 
+##Author
+
+Syeda Momina Assad
+
 ## References
 
 - [AnnData Documentation](https://anndata.readthedocs.io)
-- [Scanpy Documentation](https://scanpy.readthedocs.io)
-- [10x Genomics PBMC Dataset](https://www.10xgenomics.com/resources/datasets)
+
