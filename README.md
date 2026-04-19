@@ -301,7 +301,7 @@ using AnnData. It is a core building block for more advanced workflows:
 
 ---
 
-##Author
+## Author
 
 Syeda Momina Assad
 
